@@ -1,0 +1,14 @@
+.pendingWraper {
+    background: #fff;
+    padding-bottom: 30px;
+    padding-top: 15px;
+
+    @media (max-width:767px) {
+        padding: 15px 15px 30px;
+
+        .tableHeader {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}

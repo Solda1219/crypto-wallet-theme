@@ -1,0 +1,136 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Documantation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- font-awesome v4.6.3 css -->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <!-- modernizr css -->
+    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <div class="sidebar-wrap">
+        <ul>
+            <li><a href="index.html">Introduction</a></li>
+            <li><a href="installation.html">Installation</a></li>
+            <li class="active"><a href="structure.html"> File Structure</a></li>
+            <li><a href="components.html">Components</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <!-- <li><a href="changelog.html">Changelog</a></li> -->
+        </ul>
+    </div>
+    <div class="header-area">
+        <div class="logo">
+            <img src="assets/images/logo.svg" alt="">
+        </div>
+        <h2>File Structure</h2>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-wrap">
+                        <div class="structure-wrap">
+                            <h3>PROJECT STRUCTURE</h3>
+                            <p>CryptWallet has React boilerplate project: </p>
+<pre class="documentation__structure">
+    <code>
+    CryptWallet/
+        |——app
+        |  |——components/                      --all small components here
+        |  |  |——AddWallet/
+        |  |  |——BuyCoinByQr/
+        |  |  |——ConfirmCodePage/
+        |  |  |——DwLineChart/
+        |  |  |——Footer/
+        |  |  |——ForgotPasswordPage/
+        |  |  |——LoginPage/
+        |  |  |——MoveCoin/
+        |  |  |——SignupPage/
+        |  |  |——SubmitIdCard/
+        |  |  |——TransactionsByBitCoin/
+        |  |  |——uiStyle/                      --ui elements
+        |  |  |——WalletActivityTable/
+        |  |——containers/
+        |  |  |——__Routes/                    --all routes here
+        |  |  |——_PrivateRoute/               --all private routes here
+        |  |  |——_PublicRoute/                --all public routes here
+        |  |  |——ActivityLog/
+        |  |  |——App/                         --main app js
+        |  |  |——BreadCrumbs/                 --BreadCrumbs
+        |  |  |——BuyCoin/                     --BuyCoin Page
+        |  |  |——DashboardPage/               --DashboardPage Page
+        |  |  |——EditProfile/                 --EditProfile Page
+        |  |  |——Header/                      --Header Page
+        |  |  |——IdVarification/              --IdVarification Page
+        |  |  |——LandingPage/                 --LandingPage Page
+        |  |  |——LanguageProvider/            --LanguageProvider Page
+        |  |  |——MyProfile/                   --MyProfile Page
+        |  |  |——MyWallet/                    --MyWallet Page
+        |  |  |——NotFoundPage/                --NotFoundPage Page
+        |  |  |——PhoneVarification/           --PhoneVarification Page
+        |  |  |——Profile/                     --Profile Page
+        |  |  |——Referral/                    --Referral Page
+        |  |  |——RessetPassword/              --RessetPassword Page
+        |  |  |——Settings/                    --Settings Page
+        |  |  |——SingleWallet/                --SingleWallet Page
+        |  |  |——SingleWalletActivity/        --SingleWalletActivity Page
+        |  |  |——SingleWalletDeposite/        --SingleWalletDeposite Page
+        |  |  |——SingleWalletWithdraw/        --SingleWalletWithdraw Page
+        |  |  |images/                        --all static images 
+        |  |  |tests/                         --test file
+        |  |  |translations/                  --all translation file (en,fr, etc)
+        |  |  |utils/                         --all statick data and common js
+        |  |  |.htaccess
+        |  |  |app.js
+        |  |  |configureStore.js
+        |  |  |global-styles.js
+        |  |  |i18n.js
+        |  |  |index.html
+        |  |  |material-theme.js
+        |  |  |reducers.js
+        |——docs/
+        |  |——css/                            --all static css file
+        |  |——fonts/                          --all fonts file
+        |  |——js/
+        |__server/
+        |  |——middlewares/                  --middlewares file
+        |  |——argv.js
+        |  |——index.js
+        |  |——logger.js
+        |  |——port.js                         --you can change your port
+        |——package.json
+        |——package-lock.json
+    </code>
+</pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jquery latest version -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js "></script>
+    <!-- popper.min.js -->
+    <script src="assets/js/vendor/popper.min.js "></script>
+    <!-- bootstrap js -->
+    <script src="assets/js/bootstrap.min.js "></script>
+    <!-- main js -->
+    <script src="assets/js/scripts.js "></script>
+</body>
+
+</html>

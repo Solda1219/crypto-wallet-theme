@@ -1,0 +1,156 @@
+.sidebarMainWrapper {
+    background: linear-gradient(360deg, rgba(98, 88, 251, 0.9) 0.75%, rgba(134, 126, 255, 0.9) 100%);
+    width: 260px;
+
+    @media (max-width:991px) {
+        position: absolute;
+        left: 0px;
+    }
+
+    .logoSlidebar {
+        padding: 15px 25px;
+        background: linear-gradient(360deg, rgba(98, 88, 251, 0.9) 0.75%, rgba(134, 126, 255, 0.9) 100%);
+        min-height: 70px;
+        margin-bottom: 40px;
+    }
+
+    .menuTrigger {
+        position: absolute;
+        right: -40px;
+        height: 40px;
+        top: 0px;
+        width: 40px;
+        background: linear-gradient(360deg, #6258fb .75%, #867eff 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 7px;
+
+        li {
+            background: #fff;
+        }
+    }
+
+    .scrollBar {
+        .scrollBarContent {
+            .navItems {
+                padding: 0;
+                margin: 0;
+                box-shadow: none;
+                background: transparent;
+
+                &::before {
+                    display: none;
+                }
+
+                &.navItemsExpanded {
+                    margin: 0;
+                }
+
+                .navItemsText {
+                    height: 65px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 25px;
+
+                    .navItemsTextContent {
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        padding-left: 35px;
+
+                        img {
+                            width: 25px;
+                            height: 22px;
+                            object-fit: contain;
+                            position: absolute;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+
+                        span {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 25px;
+                            color: #fff;
+                        }
+                    }
+
+                    &.navItemsTextExpanded {
+                        background: #918af3;
+                    }
+
+                    .navItemsTextIcon {
+                        padding: 0;
+
+                        span {
+                            color: #98a6ad;
+                        }
+                    }
+                }
+
+                .submenuItems {
+                    padding: 15px 35px;
+                    list-style: none;
+                    margin: 0;
+
+                    li {
+                        margin-bottom: 10px;
+
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+
+                        a {
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 25px;
+                            color: #fff;
+                            text-decoration: none;
+
+                            &.active {
+                                color: rgba(255, 255, 255, 0.5);
+                            }
+                        }
+                    }
+                }
+            }
+
+            .navItem {
+                a {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 25px;
+                    color: #fff;
+                    height: 65px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0px 25px;
+                    padding-left: 60px;
+                    position: relative;
+                    text-decoration: none;
+
+                    img {
+                        width: 22px;
+                        height: 22px;
+                        object-fit: contain;
+                        position: absolute;
+                        left: 25px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+
+                    &.active {
+                        background: #918af3;
+                    }
+
+                    span {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

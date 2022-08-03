@@ -1,0 +1,29 @@
+.profileWrapper {
+    background: #fff;
+    padding-bottom: 30px;
+
+    .userProfile {
+        .profileImage {
+            background: #fff;
+            box-shadow: 0px 0px 30px rgba(227, 227, 227, 0.25);
+            margin-right: 50px;
+
+            @media (max-width:1700px) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .editUserProfile {
+        .editProfileImages {
+            margin-right: 50px;
+            min-height: 400px;
+            background: #fff;
+            box-shadow: 0px 0px 30px rgba(227, 227, 227, 0.25);
+
+            @media (max-width:1700px) {
+                margin-right: 0;
+            }
+        }
+    }
+}

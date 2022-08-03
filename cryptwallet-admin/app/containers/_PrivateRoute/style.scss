@@ -1,0 +1,115 @@
+.mainContainerArea {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    transition: all .4s ease;
+    overflow: hidden;
+    position: relative;
+
+    .mainContainer {
+        transition: all .4s ease;
+        width: calc(100% - 260px);
+        padding-bottom: 50px;
+
+        @media (max-width:991px) {
+            width: 100%;
+        }
+    }
+
+    .sidebarMainWrapper {
+        transition: all .4s ease;
+
+        @media (max-width:991px) {
+            position: absolute;
+            left: -300px;
+            min-height: 100%;
+            z-index: 11;
+            background: linear-gradient(360deg, rgba(98, 88, 251, 1) 0.75%, rgba(134, 126, 255, 1) 100%);
+
+        }
+    }
+
+    &.mainContainerAreaColups {
+        .mainContainer {
+            width: 100%;
+        }
+
+        .sidebarMainWrapper {
+            width: 0px;
+            visibility: hidden;
+            opacity: 0;
+
+            @media (max-width:991px) {
+                width: 260px;
+                left: 0;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .menuTrigger {
+            li {
+                &:first-child {
+                    width: 18px;
+                }
+
+                &:last-child {
+                    width: 25px;
+                }
+            }
+        }
+    }
+
+    .mainContentRouter {
+        padding: 0px 75px;
+
+        @media (max-width:1700px) {
+            padding: 0px 30px;
+        }
+
+        @media (max-width:991px) {
+            padding: 0px 15px;
+        }
+    }
+}
+
+.breadCumbWrap {
+    height: 105px;
+    display: flex;
+    align-items: center;
+
+    @media (max-width:500px) {
+        height: 70px;
+    }
+
+    li {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 42px;
+        color: rgba(68, 68, 68, 0.5);
+
+
+        @media (max-width:1200px) {
+            font-size: 24px;
+            line-height: 34px;
+        }
+
+        @media (max-width:500px) {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        &::before {
+            content: '/';
+            margin: 0px 5px;
+        }
+
+        &:first-child {
+            color: #444;
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.cardWrapper {
+    padding: 30px 45px;
+    background: #fff;
+    min-height: 100%;
+
+    @media (max-width:500px) {
+        padding: 30px 15px;
+    }
+
+    .cardHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        h3 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 30px;
+        }
+
+        .cartTabs {
+            @media (max-width:500px) {
+                min-height: unset;
+            }
+
+            button {
+                min-height: unset;
+                min-width: unset;
+                padding: 0px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                text-transform: capitalize;
+                opacity: 1;
+                margin-left: 65px;
+
+                @media (max-width:500px) {
+                    margin-left: 20px;
+                }
+
+                &:first-child {
+                    margin-left: 0;
+                }
+
+                &[aria-selected="true"] {
+                    color: #5E55E6;
+                }
+            }
+
+            .noIndigator {
+                display: none;
+            }
+        }
+    }
+}

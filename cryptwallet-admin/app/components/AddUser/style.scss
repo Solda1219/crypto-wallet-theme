@@ -1,0 +1,17 @@
+.adduserWrap {
+    padding: 0px 70px;
+
+    @media (max-width:1200px) {
+        padding: 0px 30px;
+    }
+
+    h3 {
+        min-height: 90px;
+        display: flex;
+        align-items: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+}

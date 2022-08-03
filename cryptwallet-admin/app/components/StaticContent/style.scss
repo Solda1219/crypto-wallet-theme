@@ -1,0 +1,15 @@
+.userTableWrap {
+    .tableStyle.contentTableStyle {
+        tbody {
+            tr {
+                td {
+                    padding: 10px 70px;
+
+                    @media (max-width:1200px) {
+                        padding: 10px 15px;
+                    }
+                }
+            }
+        }
+    }
+}

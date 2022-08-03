@@ -1,0 +1,50 @@
+.paginationWrapper {
+    display: flex;
+    margin-top: 30px;
+    padding: 0px 30px;
+
+    @media (max-width:767px) {
+        flex-wrap: wrap;
+        padding: 0px 15px;
+    }
+
+    li {
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media (max-width:767px) {
+            margin-right: 5px;
+        }
+
+        &.active {
+            button {
+                border-color: #6258FB;
+                color: #6258FB;
+            }
+        }
+
+        button {
+            border-radius: 0px;
+            height: 35px;
+            text-transform: capitalize;
+            width: 35px;
+            min-width: 35px;
+            font-weight: 600;
+            font-size: 15px;
+            color: #9D9A9A;
+            border: 1px solid #f1f1f1;
+            background: #fff;
+        }
+
+        &.paginat {
+            button {
+                background: #6258FB;
+                color: #fff;
+                font-size: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.creditCard {
+    cursor: pointer;
+    color: #4337FC;
+    font-weight: 500;
+}
+
+.bankDeposit {
+    cursor: pointer;
+    color: #4EB200;
+    font-weight: 500;
+}
+
+.craditCardModal {
+    .modalContainer {
+        .modalPaper {
+            width: 600px;
+
+            .modalBody {
+                padding: 50px 70px;
+
+                .cardList {
+                    li {
+                        display: flex;
+                        justify-content: space-between;
+                        min-height: 50px;
+                        align-items: center;
+                        padding: 0px 20px;
+
+                        &:nth-child(odd) {
+                            background: #fafafa;
+                        }
+
+                        span {
+                            position: relative;
+                            width: 50%;
+                            display: block;
+
+                            &::after {
+                                content: ":";
+                                position: absolute;
+                                right: 0;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
